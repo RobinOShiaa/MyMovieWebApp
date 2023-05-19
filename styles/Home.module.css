@@ -13,6 +13,17 @@
   height : 2000px;
 }
 
+.navTrigger {
+  display: none;
+}
+
+
+
+.affix {
+  padding: 0;
+  background-color: #111;
+}
+
 .nav div.logo {
   float: left;
   width: auto;
@@ -55,7 +66,7 @@
   text-decoration: none;
   color: #fff;
   line-height: 65px;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .nav div.main_list ul li a:hover {
