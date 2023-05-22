@@ -21,23 +21,23 @@ export default function Home() {
         <div className="h-screen w-screen bg-gradient-to-r from-slate-800 to-purple-900">
           <nav className="absolute flex w-full justify-end z-20 h-24 text-white">
             <div className={styles.main_list}>
-              <ul className="flex w-1/2 whitespace-nowrap">
-                <li className="mx-6 text-xl border-b-4 border-indigo-500 hover:text-violet-700 rounded-lg  border-double  h-20 p-7 my-2">
+              <ul className="flex w-1/2 whitespace-nowrap mr-16">
+                <li className="mx-3 text-xl hover:text-violet-700 rounded-lg  h-20 p-7 my-2">
                   <a href="#">Movies</a>
                 </li>
-                <li className="mx-6 text-xl border-b-4 border-indigo-500 hover:text-violet-700 rounded-lg  border-double  h-20 p-7 my-2">
+                <li className="mx-3 text-xl  hover:text-violet-700 rounded-lg h-20 p-7 my-2">
                   <a href="#">TV Shows</a>
                 </li>
-                <li className="mx-6 text-xl border-b-4 border-indigo-500 hover:text-violet-700 rounded-lg  border-double  h-20 p-7 my-2">
+                <li className="mx-3 text-xl  hover:text-violet-700 rounded-lg h-20 p-7 my-2">
                   <a href="#">Latest</a>
                 </li>
-                <li className="mx-6 text-xl border-b-4 border-indigo-500 hover:text-violet-700 rounded-lg  border-double  h-20 p-7 my-2">
+                <li className="mx-3 text-xl  hover:text-violet-700 rounded-lg h-20 p-7 my-2">
                   <a href="#">Genre</a>
                 </li>
-                <li className="mx-6 text-xl border-b-4 border-indigo-500 hover:text-violet-700 rounded-lg  border-double  h-20 p-7 my-2">
+                <li className="mx-3 text-xl  hover:text-violet-700 rounded-lg h-20 p-7 my-2">
                   <a href="#">Country</a>
                 </li>
-                <li className="mx-6 text-xl border-b-4 border-indigo-500 hover:text-violet-700 rounded-lg  border-double  h-20 p-7 my-2">
+                <li className="mx-3 text-xl hover:text-violet-700 rounded-lg h-20 p-7 my-2">
                   <a href="#">Year</a>
                 </li>
               </ul>
@@ -59,6 +59,7 @@ export default function Home() {
                       <img src={'https://www.themoviedb.org/t/p/original' + item['backdrop_path']} className="h-128 opacity-50"/>
                     </div>))}     
                 </Carousel>
+                <h3 className="m-10 p-4 text-2xl text-white text-center border-b-4 rounded-lg border-indigo-500 border-double">Trending</h3>
           </main>
         </div>
     
