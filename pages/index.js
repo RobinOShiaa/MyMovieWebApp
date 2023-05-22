@@ -47,17 +47,17 @@ export default function Home() {
           <main>
                 <Carousel infiniteLoop={true} showArrows={false} showStatus={false} showIndicators={false} showThumbs={false} autoPlay emulateTouch={true}>
                   {state.map((item,idx) =>  (
-                    <div key={idx} className="relative">
+                    <div key={idx} className="relative [text-shadow:_0_4px_0_rgb(0_0_0_/_40%)]">
                       <div className="absolute flex gap-8 flex-col w-full text-start my-40 ml-10 text-white z-10">
-                        <h1 className=" text-6xl ">{item.original_title}</h1>
-                        <p className="text-justify w-1/3">{item.overview}</p>
-                        <p>Release Date: {item.release_date}</p>
-                        <p>Rating: {item.vote_average}</p>
-                        <Link href={`https://hd.fmoviesto.site/search/?q=${item.title}`}>
+                        <h1 className="font-stargaze text-6xl ">{item.original_title}</h1>
+                        <p className="font-titillium text-justify w-1/3">{item.overview}</p>
+                        <p className="font-orbitron text-lg">Release Date: {item.release_date}</p>
+                        <p className="font-orbitron text-lg">Rating: {item.vote_average}</p>
+                        {/* <Link href={`https://hd.fmoviesto.site/search/?q=${item.title}`}>
                           <span className=" text-zinc-600 bg-white p-3"> Watch Now </span>
-                        </Link>
+                        </Link> */}
                       </div>
-                      <img src={'https://www.themoviedb.org/t/p/original' + item['backdrop_path']} className="h-128 opacity-50"/>
+                      <img src={'https://www.themoviedb.org/t/p/original' + item['backdrop_path']} className="h-128 opacity-60"/>
                     </div>))}     
                 </Carousel>
                 <h3 className="text-xl text-white text-center border-b-4 rounded-lg border-indigo-500 border-double"></h3>

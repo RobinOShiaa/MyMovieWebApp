@@ -12,6 +12,12 @@ module.exports = {
     extend: {
       spacing : {
         '128' : '43rem',
+      },
+      fontFamily : {
+        'stargaze' : ['Stargaze','cursive'],
+        'stencil' : ['Stargazes','cursive'],
+        'titillium' : ['Titillium','sans-serif'],
+        'orbitron' : ['Orbitron', 'sans-serif']
       }
     },
   },

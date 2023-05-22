@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap');
+
+@font-face {
+    font-family: "Stargaze";
+    src: url('../public/fonts/Stargaze\ Regular.woff');
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: url('../public/fonts/Orbitron-SemiBold.ttf');
+}
+
+
+@font-face {
+    font-family: "Titillium";
+    font-weight: 300;
+    src: url('../public/fonts/TitilliumWeb-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: "Stargazes";
+    src: url('../public/fonts/Stargaze\ Stencil.woff');
+}
