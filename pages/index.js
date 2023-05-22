@@ -44,7 +44,7 @@ export default function Home() {
             </div>
           </nav>
           <main>
-                <Carousel showStatus={false} showThumbs={false} autoPlay emulateTouch={true}>
+                <Carousel infiniteLoop={true} showArrows={false} showStatus={false} showIndicators={false} showThumbs={false} autoPlay emulateTouch={true}>
                   {state.map((item,idx) =>  (
                     <div key={idx} className="relative">
                       <div className="absolute flex gap-8 flex-col w-full text-start my-40 ml-10 text-white z-10">
