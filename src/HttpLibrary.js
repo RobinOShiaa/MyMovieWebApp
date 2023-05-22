@@ -7,6 +7,11 @@ export  const getPopularMovies = async (page, setState) => {
     .catch('error');
 }
 
+export  const getTrendingMovies = async (page, setState) => {
+    axios.get(`https://api.themoviedb.org/3/trending/movie/week?api_key=${API_KEY}&language=en-US`)
+    .then((response) => setState((response.data.results).slice(0,8)))
+    .catch('error');
+}
 export const getTopRatedMovies = (page) => {
     axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en-US&page=${page}`)
     .then((response) => response.data)

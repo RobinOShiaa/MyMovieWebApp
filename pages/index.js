@@ -1,19 +1,20 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-import { getPopularMovies } from "@/src/HttpLibrary";
+import { getPopularMovies, getTrendingMovies } from "@/src/HttpLibrary";
 import { useEffect, useState } from "react";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Link from 'next/link'
 export default function Home() {
   const [state,setState] = useState([]);
-  getPopularMovies(1,setState);
-  console.log(state);
+  const [trending,setTrending] = useState([]);
 
 
-
-
+  useEffect(() => {
+    getPopularMovies(1,setState);
+    getTrendingMovies(1,setTrending);
+  },[])
 
   
   return (
@@ -59,12 +60,19 @@ export default function Home() {
                       <img src={'https://www.themoviedb.org/t/p/original' + item['backdrop_path']} className="h-128 opacity-50"/>
                     </div>))}     
                 </Carousel>
-                <h3 className="m-10 p-4 text-2xl text-white text-center border-b-4 rounded-lg border-indigo-500 border-double">Trending</h3>
+                <h3 className="text-xl text-white text-center border-b-4 rounded-lg border-indigo-500 border-double"></h3>
+                <div className="mx-8 grid grid-cols-8 gap-4 p-4 m-4">
+                    {trending.map((item,idx) =>  (
+                      <div key={idx}>
+                        <div className="h-full w-56 border-4 border-black rounded-lg">
+                          <img className='object-cover h-full w-full' src={'https://www.themoviedb.org/t/p/original' + item['backdrop_path']}></img>
+                        </div>
+                        <h4 className="text-center text-xs text-white">{item.title}</h4>
+                      </div>
+                    ))}  
+                </div>
           </main>
         </div>
-    
-   
-    
     </>
     
   );
