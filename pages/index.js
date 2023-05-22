@@ -67,7 +67,7 @@ export default function Home() {
                         <div className="h-full w-56 border-4 border-black rounded-lg">
                           <img className='object-cover h-full w-full' src={'https://www.themoviedb.org/t/p/original' + item['backdrop_path']}></img>
                         </div>
-                        <h4 className="text-center text-sm text-ellipsis overflow-hidden whitespace-nowrap text-white">{item.title}</h4>
+                        <h4 className="text-center text-ellipsis overflow-hidden whitespace-nowrap text-white">{item.title}</h4>
                       </div>
                     ))}  
                 </div>
