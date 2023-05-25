@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       spacing : {
-        '128' : '43rem',
+        '128' : '38rem',
       },
       fontFamily : {
         'stargaze' : ['Stargaze','cursive'],
