@@ -243,22 +243,18 @@ export default function Home() {
                     "https://www.themoviedb.org/t/p/original" +
                     item["backdrop_path"]
                   }
-                  className="h-screen w-screen object-cover opacity-60"
+                  className=" h-128 w-screen object-fill opacity-60"
                 />
               </div>
             ))}
           </Carousel>
-          {/* <h3 className="text-xl text-white text-center border-b-4 rounded-lg border-indigo-500 border-double"></h3>
-                <div className="mx-8 grid grid-cols-8 gap-4 p-4 m-4">
-                    {trending.map((item,idx) =>  (
-                      <div key={idx}>
-                        <div className="h-full w-56 border-4 border-black rounded-lg">
-                          <img className='object-cover h-full w-full' src={'https://www.themoviedb.org/t/p/original' + item['backdrop_path']}></img>
-                        </div>
-                        <h4 className="text-center text-ellipsis overflow-hidden whitespace-nowrap text-white">{item.title}</h4>
-                      </div>
-                    ))}  
-                </div> */}
+          <div className="mx-auto my-12 bg-white h-14 w-3/5">
+            <div className="flex h-full p-2">
+              <label className="my-auto p-2">Search</label>
+              <input type="text" className="w-full"/>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-slate-900 to-violet-950  h-screen"></div>
         </main>
       </div>
